@@ -11,7 +11,7 @@ export const AI_GATEWAY_URL = "https://ai.gateway.lovable.dev/v1";
 export const AI_MODEL = "openai/gpt-6-astra";
 
 export function getApiKey() {
-  return process.env.LOVABLE_API_KEY?.trim() || undefined;
+  return process.env["LOVABLE_API_KEY"]?.trim() || undefined;
 }
 
 /** Streams a Responses call through Lovable AI Gateway. Create one per request. */

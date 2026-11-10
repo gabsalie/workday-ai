@@ -4,14 +4,14 @@ import { useRouterState } from "@tanstack/react-router";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { aiStatusQuery } from "@/lib/ai-status.functions";
-import { NAV_ITEMS } from "@/lib/nav";
+import { DASHBOARD_NAV, NAV_ITEMS } from "@/lib/nav";
 import { cn } from "@/lib/utils";
 
 export function AppHeader() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const current =
     NAV_ITEMS.find((i) => (i.url === "/" ? pathname === "/" : pathname.startsWith(i.url))) ??
-    NAV_ITEMS[0];
+    DASHBOARD_NAV;
 
   return (
     <header className="sticky top-0 z-20 flex h-14 shrink-0 items-center gap-3 border-b bg-background/80 px-3 backdrop-blur-md sm:px-5">
