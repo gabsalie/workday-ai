@@ -1,63 +1,162 @@
-# Workday AI
+# AI Workplace Productivity Assistant 🤖
 
-Build a modern, responsive SaaS web application called **AI Workplace Productivity Assistant**.
+An AI-powered workplace productivity application designed to help professionals save time, simplify everyday tasks and improve efficiency through intelligent assistance.
 
-**Purpose:** Help professionals save time and improve productivity using AI-powered workplace tools.
+## 📌 Project Overview
 
-**Core features:**
+The **AI Workplace Productivity Assistant** is a modern, responsive web application that provides AI-powered tools for managing workplace information and tasks.
 
-1. **Meeting Notes Summarizer:** Allow users to paste lengthy meeting notes. Generate structured summaries, key discussion points, decisions, action items, assigned responsibilities and deadlines.
+The application brings together meeting summarisation, research assistance and an interactive AI chatbot in one centralised dashboard.
 
-2. **AI Research Assistant:** Allow users to enter a topic or paste an article. Generate detailed, relevant summaries, key insights, recommendations and practical takeaways.
+Its purpose is to make workplace tasks easier by transforming lengthy information into structured, understandable and actionable outputs.
 
-3. **AI Workplace Chatbot:** Provide an interactive chat interface where users can ask workplace-related questions, generate professional content, solve problems and receive contextual, useful responses.
+## ✨ Features Implemented
 
-**Design requirements:**
-- Professional, modern SaaS dashboard.
-- Collapsible sidebar with navigation for Dashboard, Meeting Summarizer, Research Assistant and AI Chat.
-- Responsive layout for desktop, tablet and mobile.
-- Beautiful blue, turqoise, green, lime, yellow, orange gradient/ombre colour palette.
-- Clean typography, rounded cards, subtle shadows and smooth animations.
-- Modern icons, clear buttons and intuitive navigation.
-- Dashboard with welcome message, feature cards and recent activity.
+### 1. Meeting Notes Summarizer
+- Summarises lengthy meeting notes.
+- Extracts important discussion points.
+- Identifies key decisions.
+- Generates action items and deadlines.
+- Organises information into structured outputs.
+- Allows users to edit and copy generated summaries.
 
-**Functionality:**
-- Use AI-generated, context-aware responses, not generic placeholder outputs.
-- Include structured prompts for each AI tool.
-- Make all generated outputs editable.
-- Include copy, regenerate and clear buttons.
-- Use loading indicators while generating responses.
-- Include sample prompts to help users get started.
-- Allow users to interact with the AI and refine generated results.
+### 2. AI Research Assistant
+- Summarises topics and articles.
+- Identifies key insights and important information.
+- Provides relevant recommendations.
+- Generates practical takeaways.
+- Allows users to edit and copy research outputs.
 
-**Technical requirements:**
-- Frontend only. No backend, database, authentication or paid infrastructure.
-- Use React, TypeScript and Tailwind CSS.
-- Use a suitable AI API integration if available, with API keys entered securely through environment variables. Do not expose API keys in frontend code.
-- If no AI API is configured, provide a clearly labelled demo mode rather than pretending responses are live AI-generated.
-- Use local storage for basic preferences and temporary history.
+### 3. AI Workplace Chatbot
+- Interactive AI-powered chat interface.
+- Answers workplace-related questions.
+- Assists with professional writing and content generation.
+- Provides contextual responses to user prompts.
+- Supports follow-up questions and conversations.
 
-**Responsible AI:** Display a disclaimer explaining that AI-generated content may contain errors and should be reviewed before being used for workplace decisions.
+### 4. Dashboard and User Interface
+- Modern SaaS-inspired dashboard.
+- Sidebar navigation.
+- Responsive desktop and mobile layouts.
+- Blue, pink and purple gradient colour scheme.
+- Editable AI-generated content.
+- Copy, regenerate and clear functionality.
+- Loading indicators and sample prompts.
 
-Prioritise functionality, usability and visual quality. Build all three tools as working, connected sections of one application. Avoid unnecessary features that increase complexity. Make the final product feel like a polished, production-quality SaaS platform.
+### 5. Responsible AI
+- Includes an AI disclaimer.
+- Encourages users to verify AI-generated information before using it for workplace decisions.
 
-This project was built with [Lovable](https://lovable.dev).
+## 🛠️ Technologies and Tools Used
 
-## Build with Lovable
+| Technology | Purpose |
+|---|---|
+| React | Frontend application development |
+| TypeScript | Type safety and maintainable code |
+| Tailwind CSS | Styling and responsive layouts |
+| Vite | Development server and build tool |
+| Lucide Icons | Interface icons |
+| AI API integration | AI-generated responses |
+| Local Storage | Saving basic preferences and temporary history |
+| Lovable | AI-assisted application development |
+| GitHub | Source code management and version control |
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/00c37b5e-f5d7-40ee-8ffb-7f86d03d8744).
+## 🚀 Setup Instructions
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+### Prerequisites
 
-## Development
+Make sure you have the following installed:
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+- [Node.js](https://nodejs.org/) (LTS version recommended)
+- npm (included with Node.js)
+- [Git](https://git-scm.com/)
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+### 1. Clone the Repository
+
+```bash
+git clone (https://workplace-insight-companion.lovable.app)
+```
+
+### 2. Navigate to the Project Folder
+
+```bash
+cd ai-workplace-productivity-assistant
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Configure Environment Variables
+
+If an AI API integration is configured, add the required environment variables to your local environment configuration.
+
+Create a `.env` file if required by your project setup.
+
+**Important:** Never expose private API keys in frontend code or commit secret credentials to GitHub.
+
+### 5. Run the Application
+
+```bash
 npm run dev
 ```
+
+### 6. Open the Application
+
+Open the local development URL displayed in your terminal, usually:
+
+```text
+http://localhost:5173
+```
+
+## 📁 Project Structure
+
+```text
+ai-workplace-productivity-assistant/
+│
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+│
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+```
+
+*Note: The structure above is a general example. Actual folders and files may differ depending on the implementation.*
+
+## 🔒 Privacy and Security
+
+- No custom backend or database is required.
+- Basic preferences and temporary history may be stored locally.
+- AI functionality depends on the configured integration.
+- API credentials should never be exposed in client-side code.
+
+## 🎯 Project Objectives
+
+The project aims to:
+
+- Improve workplace productivity through AI assistance.
+- Reduce the time spent processing lengthy information.
+- Simplify meeting documentation and action-item tracking.
+- Make research and information gathering more efficient.
+- Provide an accessible and user-friendly AI workplace assistant.
+
+## 👩‍💻 Author
+
+**Ghabriella Salie**
+
+AI Workplace Productivity Assistant
+
+---
+
+*Developed as a frontend-focused AI productivity application using modern web technologies.*
